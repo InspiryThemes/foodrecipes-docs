@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>FoodRecipe Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,800italic,400,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Style Sheet-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/lightbox.css"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" >
+
+</head>
+<body>
+<div class="container-fluid main-container">
+    <div class="row">
+
+        <div class="col-lg-3 col-md-3 col-sm-4 sidebar-wrapper">
+            <div class="sidebar-inner-wrapper">
+
+                <div class="title-area">
+                    <h1 class="site-title">FoodRecipe</h1>
+                    <p class="site-description">By <a target="_blank" href="http://themeforest.net/user/InspiryThemes">Inspiry Themes</a></p>
+                </div>
+                <nav class="nav-main" id="nav" role="navigation">
+                    <ul class="main-menu">
+                        <li>
+                            <a href="#" class="menu-item">
+                                    <span class="main-menu-item">
+                                        <i class="glyphicon glyphicon-cog"></i>Getting Started<span class="glyphicon glyphicon-chevron-right"></span>
+                                    </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a class="sub-menu-item" href="#introduction">Introduction</a></li>
+                                <li><a class="sub-menu-item" href="#install-theme">Install Theme</a></li>
+                                <li><a class="sub-menu-item" href="#install-plugins">Install Plugins</a></li>
+                                <li><a class="sub-menu-item" href="#install-child-theme">Install Child Theme</a></li>
+                                <li><a class="sub-menu-item" href="#import-xml">Import Demo Contents</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" class="menu-item">
+                                    <span class="main-menu-item">
+                                        <i class="glyphicon glyphicon-home"></i>Home and Blog Page<span class="glyphicon glyphicon-chevron-right"></span>
+                                    </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a class="sub-menu-item" href="#create-home">Create Home Page</a></li>
+                                <li><a class="sub-menu-item" href="#create-blog">Create Blog Page</a></li>
+                                <li><a class="sub-menu-item" href="#configure-main-menu">Configure Main and Social Menu</a></li>
+                                <li><a class="sub-menu-item" href="#configure-reading">Configure Reading Settings</a></li>
+                                <li><a class="sub-menu-item" href="#configure-permalink">Configure Permalink Settings</a></li>
+                                <li><a class="sub-menu-item" href="#logo-favicon-header-img">Logo, Favicon and Header Image</a></li>
+                                <li><a class="sub-menu-item" href="#selecting-slider">Selecting and Setting Up Sliders</a></li>
+                                <li><a class="sub-menu-item" href="#home-footer-widgets">Homepage and Footer Widgets</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" class="menu-item">
+                                    <span class="main-menu-item">
+                                        <i class="glyphicon glyphicon-pencil"></i>Add Contents<span class="glyphicon glyphicon-chevron-right"></span>
+                                    </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a class="sub-menu-item" href="#add-news-pots">Add News Post</a></li>
+                                <li><a class="sub-menu-item" href="#add-recipe">Add Recipe</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" class="menu-item">
+                                    <span class="main-menu-item">
+                                        <i class="glyphicon glyphicon-file"></i>Create Pages<span class="glyphicon glyphicon-chevron-right"></span>
+                                    </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a class="sub-menu-item" href="#recipe-listing">Recipes Listing Page</a></li>
+                                <li><a class="sub-menu-item" href="#create-search-results">Recipe Advance Search Page</a></li>
+                                <li><a class="sub-menu-item" href="#recipe-submit-page">Recipe Submit Page</a></li>
+                                <li><a class="sub-menu-item" href="#faqs-page">FAQs Page</a></li>
+                                <li><a class="sub-menu-item" href="#user-list">User List Page</a></li>
+                                <li><a class="sub-menu-item" href="#user-profile">User Profile Page</a></li>
+                                <li><a class="sub-menu-item" href="#contact-page">Contact Page</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" class="menu-item">
+                                    <span class="main-menu-item">
+                                        <i class="glyphicon glyphicon-star"></i>Widgets<span class="glyphicon glyphicon-chevron-right"></span>
+                                    </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a class="sub-menu-item" href="#tabs-widget">Custom jQuery Tabs Widget</a></li>
+                                <li><a class="sub-menu-item" href="#ads-widget">Custom Ads Widgets</a></li>
+                                <li><a class="sub-menu-item" href="#archive-widget">Custom Archive Widget</a></li>
+                                <li><a class="sub-menu-item" href="#recipe-types-widget">Recipe Types Widget</a></li>
+                                <li><a class="sub-menu-item" href="#news-events-widget">New And Event Widget</a></li>
+                                <li><a class="sub-menu-item" href="#weekly-special-widget">Weekly Special Recipe Widget</a></li>
+                                <li><a class="sub-menu-item" href="#custom-twitter-widget">Custom Twitter Widget</a></li>
+                                <li><a class="sub-menu-item" href="#recent-recipes-widget">Recent Recipes Widget</a></li>
+                                <li><a class="sub-menu-item" href="#slider-widget">Recipe Slider Widget</a></li>
+                                <li><a class="sub-menu-item" href="#footer-info-widget">Footer Info Widget</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-item">
+                                    <span class="main-menu-item">
+                                        <i class="glyphicon glyphicon-leaf"></i>Shortcodes<span class="glyphicon glyphicon-chevron-right"></span>
+                                    </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a class="sub-menu-item" href="#columns">Columns</a></li>
+                                <li><a class="sub-menu-item" href="#jQuery-accordion">jQuery Accordion</a></li>
+                                <li><a class="sub-menu-item" href="#jQuery-toggle">jQuery Toggle</a></li>
+                                <li><a class="sub-menu-item" href="#jQuery-tabs">jQuery Tabs</a></li>
+                                <li><a class="sub-menu-item" href="#buttons">Buttons</a></li>
+                                <li><a class="sub-menu-item" href="#list-types">List Types</a></li>
+                                <li><a class="sub-menu-item" href="#info-messages">Info Messages</a></li>
+                                <li><a class="sub-menu-item" href="#special-headings">Special Headings</a></li>
+                                <li><a class="sub-menu-item" href="#blockquote">Blockquote</a></li>
+                                <li><a class="sub-menu-item" href="#custom-menus">Custom Menus</a></li>
+                                <li><a class="sub-menu-item" href="#step-headings-horizontal-line">Step Headings and Horizontal Line</a></li>
+                                <li><a class="sub-menu-item" href="#faq-list">FAQ List</a></li>
+                                <li><a class="sub-menu-item" href="#ingredients">Ingredients</a></li>
+                                <li><a class="sub-menu-item" href="#method">Method</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" class="menu-item">
+                                    <span class="main-menu-item">
+                                        <i class="glyphicon glyphicon-edit"></i>Modify Theme<span class="glyphicon glyphicon-chevron-right"></span>
+                                    </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a class="sub-menu-item" href="#modify-styles">Modify Styles</a></li>
+                                <li><a class="sub-menu-item" href="#modify-theme-options">Modify Theme Options</a></li>
+                                <li><a class="sub-menu-item" href="#modify-meta-boxes">Modify Meta Boxes</a></li>
+                                <li><a class="sub-menu-item" href="#hire-customization">Hire Customization Services</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div><!-- inner wrapper -->
+        </div><!-- sidebar wrapper -->
+
+
+        <div class="col-lg-9 col-md-8 col-sm-7">
+
+            <main class="page-content"  role="main">
+
+                <article class="hentry" id="introduction">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Introduction</h1>
+                        <p>This documentation is last updated on 3 December 2015.</p>
+                        <p>Thank you for purchasing FoodRecipe WordPress Theme . If you have any question that is beyond the scope of this documentation, Please feel free to create a support ticket using <a href="http://support.inspirythemes.com/" target="_blank">Our Support Site</a>.</p>
+                        <p class="bg-warning text-warning">
+                            <strong>Disclaimer:</strong><br/> We offer limited support for theme customers. We only provide support for our themes and their core features. We cannot guarantee our themes will work properly with all third party plugins and server environments. If you plan on adding numerous plugins to this theme then please note, We cannot facilitate support for any conflicts that might arise with this theme's default functionality. The FoodRecipe WordPress theme is presented as it is.
+                        </p><br/>
+                        <h4>Themeforest Item Purchase Code to Signup on Support Site</h4>
+                        <p>Please visit <a target="_blank" href="http://support.inspirythemes.com/knowledgebase/how-to-get-themeforest-item-purchase-code/">this knowledge base article</a> to learn about how to get item purchase code from themeforest to signup on our support site.</p>
+                        <br/>
+                        <h4>Updating WordPress Theme</h4>
+                        <p>If this is a theme update and you want to apply it on your existing installation then please visit <a target="_blank" href="http://support.inspirythemes.com/knowledgebase/better-way-to-update-wordpress-theme/">this knowledge base article</a> to learn about a better way to update your theme</p>
+                        <br/>
+                        <p><strong>If you like this theme, Please support us by rating this theme with 5 stars (<a data-lightbox="how-to-rate-theme" href="how-to-rate-theme.png" >How to rate?</a>)</strong>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <i class="glyphicon glyphicon-star"></i>
+                            <i class="glyphicon glyphicon-star"></i>
+                            <i class="glyphicon glyphicon-star"></i>
+                            <i class="glyphicon glyphicon-star"></i>
+                            <i class="glyphicon glyphicon-star"></i>
+                        </p>
+                    </div>
+                </article>
+
+                <article class="hentry" id="install-theme">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Install Theme</h1>
+                        <p>In start you must have a working version of WordPress already installed. For information in regard to installing the WordPress CMS, please see the WordPress Codex <a target="_blank" href="http://codex.wordpress.org/Installing_WordPress">Installing WordPress</a></p>
+                        <p>Once you have a working of version of WordPress, you need to download <a data-lightbox="all-files" href="assets/common-images/all-files.png">All Files and Documentation</a> from themeforest and extract the downloaded zip to get various files including <strong>inspirythemes-food-recipes.zip</strong>.</p>
+
+                        <h4>Install Theme Via WordPress Dashboard</h4>
+                        <img src="assets/food-recipe/install/1.png" alt="">
+
+                        <ol>
+                            <li>Go to 'Appearance &gt; Themes' section</li>
+                            <li>Click 'Add New' and select the 'Upload Theme' option </li>
+                            <li>Choose the <strong>inspirythemes-food-recipes.zip</strong> file and press 'Install Now'</li>
+                            <li>Once the theme is uploaded you need to activate it.</li>
+                        </ol>
+                        <p class="bg-info text-info">
+                            if you face any problem during upload through dashboard, please upload the theme using FTP as guided below.
+                        </p>
+
+                        <h3>Install Theme Via FTP</h3>
+                        <ol>
+                            <li>Access your hosting server using an ftp client like <a target="_blank" href="https://filezilla-project.org/">FileZilla</a></li>
+                            <li>Go to the 'wp-content/themes' folder of your WordPress installation</li>
+                            <li>Upload <strong>'inspirythemes-food-recipes'</strong> directory from downloaded package in 'wp-content/themes/'.</li>
+                            <li>Go to 'WordPress Dashboard &gt; Appearance &gt; Themes' section to activate the theme</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="hentry" id="install-plugins">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Install Plugins</h1>
+                        After you have installed and activated the theme, there'll be a list of <strong>required</strong> and <strong>recommended</strong> plugins at the top of the WordPress dashboard. <br><br>
+                        <img src="assets/food-recipe/install/2.png" alt=""><br><br>
+                        If you already hide it out, you can go to <strong>'Appearance &gt; Install Plugins'</strong> section instead. <br><br>
+                        So, you need to install and activate these plugins as demonstrated below.<br><br>
+                        <p>Installing <strong>WP Post View,</strong> <strong>Display Tweets</strong> and <strong> WP Favorite Posts</strong> plugins are optional. WP Post View tracks the views of each recipe and display it at the end of rating box on single recipe page.</p>
+                        <img src="assets/food-recipe/install/install-plugins.gif" alt="">
+                    </div>
+                </article>
+
+                <article class="hentry" id="install-child-theme">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Install Child Theme</h1>
+                        <p>If you want to make modification in this theme then it is better to modify it in child theme only. This way you can easily update your parent theme whenever new update becomes available on themeforest. You can read more about child theme from <a target="_blank" href="http://codex.wordpress.org/Child_Themes">here.</a> </p>
+                        <p>To install child theme, you need to upload the <strong>inspirythemes-food-recipes-child.zip</strong> and activate it in the same way as you uploaded and activated the parent theme's <strong>Food Recipes 1.5.zip</strong>.</p>
+                    </div>
+                </article>
+
+                <article class="hentry" id="import-xml">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Import Demo Contents</h1>
+                        <p>You can follow one of these approaches.</p>
+                        <ol>
+                            <li> One Click Demo Import ( Automatic & Recommended )</li>
+                            <li>Import XML Contents, Customizer Settings, and Widgets Manually</li>
+                        </ol>
+                        <h2>One Click Demo Import ( Automatic & Recommended )</h2>
+                        <h3><strong>Step 1</strong></h3>
+                        <p>Go to <strong>Dashboard > Settings > Permalinks</strong> and choose Post name from Common Settings and save the changes, As displayed in screen shot below.</p>
+
+                        <p>
+                            Importing demo contents and making your site one step closer to the theme demo requires following steps.
+                        </p>
+                        <ol>
+                            <li>Importing XML file</li>
+                            <li>Configuring Menus</li>
+                        </ol>
+                        <p>Look for <strong>Import XML</strong> folder in unzipped package downloaded from themeforest and use the XML within it.
+                            <br/> Go to the <strong>WordPress Admin &gt; Tools &gt; Import </strong> and click <strong>WordPress</strong> as displayed in image below.
+                        </p>
+
+                        <img src="assets/food-recipe/install/4.png" alt=""/><br/><br/>
+                        <p>At 1st time you need to install WordPress importer plugin</p>
+                        <img src="assets/food-recipe/install/5.png" alt=""/><br/><br/>
+                        <p>Once installed you need to activate the plugin and run the importer.</p>
+                        <img src="assets/food-recipe/install/6.png" alt=""/><br/><br/>
+                        <p>Select the XML file from <strong>Import XML</strong> folder in unzipped package that you have downloaded from themeforest.</p>
+                        <img src="assets/food-recipe/install/7.png" alt=""/><br/><br/>
+
+                        <p>
+                            After importing XML file.
+                        <ol>
+                            <li>Assign posts to an existing author.</li>
+                            <li>Mark the checkbox to download and import file attachments</li>
+                            <li>Click 'Submit' button</li>
+                        </ol>
+                        </p>
+
+                        <img src="assets/food-recipe/install/8.png" alt=""/><br/><br/>
+                        <p>After that is done, you will have bunch of posts, pages, doctors, gallery items, services and other contents as on the theme demo.</p>
+                        <img src="assets/food-recipe/install/9.png" alt=""/><br/><br/>
+                        <p>Next step is to configure menu.</p>
+                        <h3>Configure Menus</h3>
+                        <p>Navigate to <strong>Appearance &gt; Menus</strong> and use the Already Imported Menu from XML and assign it to theme location "Main Menu" from <strong>Menu Settings</strong> section below menu. After that save the menu. As pointed in screenshot below.</p>
+                        <img src="assets/food-recipe/install/10.png" alt=""/><br/><br/>
+                        <img src="assets/food-recipe/install/14.png" alt=""/><br/><br/>
+                    </div>
+                </article>
+
+                <article class="hentry" id="create-home">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Create Home Page</h1>
+                        <p class="bg-info text-info">
+                            In case of imported XML the home page is already created and you do not need to follow this section.
+                        </p>
+                        <p>To set up the Home page you need to create a new page,<br/><br/>
+                            Go to <strong>Pages > Add New</strong>. You can give this page a title &quot;Home&quot; yet you do not need to include any contents for now.
+                            <br/><br/> Select the “Home Template” template from the Page Attributes section, as displayed in screenshot given below. Click <strong>“Publish”</strong> to make this page available for visitors.</p>
+                        <img src="assets/food-recipe/pages/1.png" alt=""/><br/><br/>
+                    </div>
+                </article>
+
+                <article class="hentry" id="configure-main-menu">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Setting Up Main and Social Menu</h1>
+                        <p class="bg-info text-info">
+                            The theme has two custom menu locations, one is main menu and other is social menu. You can assign each location a custom menu.
+                        </p>
+                        <p>To setup your custom menus, navigate to <strong>Appearance > Menus.</strong> Give your menu a name and build it up. You can add a variety of items including pages, categories, custom links. Once you have built your menu, save it and assign it to a location.</p>
+                        <h3>Main Menu</h3>
+                        <p>Main Menu is intelligent menu. You can manage it by giving instruction and if it is getting wider than available space, it will automatically make a dropdown menu at the end for the rest of menus.</p>
+                        <h3>Social Menu</h3>
+                        <p>
+                            Social Menu is a class based menu. Enable Classes from screen options at the top right corner and give your every menu a class and add the related link for it.
+                        </p><br/>
+                        <img src="assets/food-recipe/home-page/11.png" alt=""/><br/><br/>
+                        <h5>Available Range of Classes are:</h5>
+                        <p>'facebook',<br> 'twitter',<br> 'rss',<br> 'flickr',<br> 'apple',<br> 'bhance',<br> 'dribbble',<br> 'google',<br> 'linkedin',<br> 'pinterest',<br> 'plus',<br> 'sharethis',<br> 'skype',<br> 'stumbleupon',<br> 'vimeo',<br> 'wordpress',<br> 'yahoo',<br> 'youtube'</p>
+
+                    </div>
+                </article>
+
+                <article class="hentry" id="configure-social-menu">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Create Home Page</h1>
+                        <p class="bg-info text-info">
+                            In case of imported XML the home page is already created and you do not need to follow this section.
+                        </p>
+                        <p>To set up the Home page you need to create a new page,<br/><br/>
+                            Go to <strong>Pages > Add New</strong>. You can give this page a title &quot;Home&quot; yet you do not need to include any contents for now.
+                            <br/><br/> Select the “Home Template” template from the Page Attributes section, as displayed in screenshot given below. Click <strong>“Publish”</strong> to make this page available for visitors.</p>
+                        <img src="assets/food-recipe/pages/1.png" alt=""/><br/><br/>
+                    </div>
+                </article>
+
+                <article class="hentry" id="create-blog">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Create Blog Page</h1>
+                        <p class="bg-info text-info">
+                            In case of imported XML the blog page is already created and you do not need to follow this section.
+                        </p>
+                        <p>To set up the Blog page you need to create a new page,<br/><br/>
+                            Go to <strong>Pages > Add New</strong>. You can give this page a title &quot;Blog&quot; yet you do not need to include any contents for now.
+                            <br/><br/> Select the “Default Template” template from the Page Attributes section, as displayed in screenshot given below and click <strong>“Publish”</strong>.</p>
+                        <img src="assets/food-recipe/pages/2.png" alt=""/><br/><br/>
+                    </div>
+                </article>
+
+                <article class="hentry" id="configure-reading">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Configure Reading Settings</h1>
+                        <p>I am assuming that you have imported the XML successfully and you have home page and blog page available for use. If this is not the case then simply create a new page using <strong>Home Template</strong> and name it as Home after that create another page using default template and name it as Blog.</p>
+                        <p>To configure reading settings you need to visit <strong>WordPress Admin &gt; Settings &gt; Reading</strong> and choose that front page displays as static page. Then select Home as Front Page and Blog as Posts Page. As, displayed in screenshot given below.</p>
+                        <img src="assets/food-recipe/install/11.png" alt=""/><br/><br/>
+                    </div>
+                </article>
+
+                <article class="hentry" id="configure-permalink">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Configure Permalink Settings</h1>
+                        <p> To configure permalink settings visit <strong>WordPress Admin &gt; Settings &gt; Permalinks</strong> and configure it as displayed in image below.</p>
+                        <img src="assets/food-recipe/install/13.png" alt=""/><br/><br/>
+                    </div>
+                </article>
+
+                <article class="hentry" id="logo-favicon-header-img">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Logo, Favicon and Header Image</h1>
+                        <p>To configure homepage from theme options you have to click <strong>Appearance &gt; Theme Options</strong>. Here you can see first tab Named <strong>Home Page</strong> on the left column and its options on right side. First Two options are given below.</p>
+                        <ul>
+                            <li><strong>Header Logo:</strong> Here you can upload a logo for your website. Food Recipes logo which you can see on <a href="http://foodrecipes.inspirythemes.com/" target="_blank">demo site</a> is 164px in width and 57px in height. It is batter that you put your logo near to these dimensions.</li>
+                            <li><strong>Favicon: </strong>Here you can upload a favicon for your website in PNG format. This will appear beside you title of the website in browser's title bar.</li>
+                            <li><strong>Header Image:</strong> Here you can upload header image for your website. Food Recipes header image which you can see on <a href="http://foodrecipes.inspirythemes.com/" target="_blank">demo site</a> has dimensions: 463 × 117. It is batter that you put your header image near to these dimensions. This image willbe override the image which you already uploaded through WordPres header tab under appearnce tab</li>
+                        </ul>
+                        <img src="assets/food-recipe/home-page/1.png" alt=""/><br/><br/>
+                    </div>
+                </article>
+
+                <article class="hentry" id="selecting-slider">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Selecting and Setting Up Sliders</h1>
+                        <p>After Selecting Logo for the website and favicon, you can see an option for selecting slider type for your homepage. There are 5 types of sliders given in Food Recipes Theme. You can see setting up process for each slider in screenshots given below.</p>
+                        <h4>Recipe Post ID</h4>
+                        <p>For sliders you need recipe post id to attach slides/image with related recipe. So, this image below will guide you from where you can get Recipe ID to use it in sliders.</p>
+                        <img src="assets/food-recipe/home-page/2.png" alt=""/><br/><br/>
+                        <h5>1) Setting Up Left Image Slider</h5>
+                        <img src="assets/food-recipe/home-page/3.png" alt=""/><br/><br/>
+                        <h5>2) Setting Up Basic Slider</h5>
+                        <img src="assets/food-recipe/home-page/4.png" alt=""/><br/><br/>
+                        <h5>3) Setting Up Nivo Slider</h5>
+                        <img src="assets/food-recipe/home-page/5.png" alt=""/><br/><br/>
+                        <h5>4) Setting Up Accordion Slider</h5>
+                        <img src="assets/food-recipe/home-page/6.png" alt=""/><br/><br/>
+                        <h5>5) Setting Up Thumbnail Slider</h5>
+                        <img src="assets/food-recipe/home-page/7.png" alt=""/><br/><br/>
+                    </div>
+                </article>
+
+                <article class="hentry" id="home-footer-widgets">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Homepage Widgets and Setting Up Footer</h1>
+                        <p>Under Sliders section you can see four fields for homepage hot recipes where you can select recipes to show in Whats Hot section. All of your recipes will be listed in these fields.</p>
+                        <p>Homepage have a widgetized area at the bottom. Here you can put some widgets as you can see in <a href="http://foodrecipes.inspirythemes.com/" target="_blank">Food Recipe Theme Demo</a>.</p>
+                        <p>The following image is displaying the use of widgets for homepage bottom area.</p>
+                        <img src="assets/food-recipe/home-page/8.png" alt=""/><br/><br/>
+                        <h4>Setting Up Footer Options</h4>
+                        <p>Footer's two text statements can be configured from theme options as displayed in image below.</p>
+                        <img src="assets/food-recipe/home-page/9.png" alt=""/><br/><br/>
+                        <h4>Setting Up Footer Widgets</h4>
+                        <p>Footer three columns are widgetized areas and you can add widgets as displayed in image below.</p>
+                        <img src="assets/food-recipe/home-page/10.png" alt=""/><br/><br/>
+                    </div>
+                </article>
+
+                <article class="hentry" id="add-news-pots">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Add News Post</h1>
+
+                        Go to <strong>WordPress Admin &gt; Posts &gt; Add New</strong>
+                        <ol>
+                            <li>Provide the post title</li>
+                            <li>Enter the post contents if any and add MORE tag after few lines <br/><br/>
+                                <img src="assets/food-recipe/contents/2.png" alt=""/><br/><br/>
+                            </li>
+                            <li>
+                                Provide the featured image. The image should have 575px minimum width and 262px minimum height.
+                                <br/><br/>
+                                <img src="assets/food-recipe/contents/1.png" alt=""/><br/><br/>
+                            </li>
+                            <li>Publish the post once it is ready.</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="hentry" id="add-recipe">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Add Recipes</h1>
+
+                        Go to <strong>WordPress Admin &gt; Recipes &gt; Add New</strong>
+                        <ol>
+                            <li>Provide the Recipe name <br/><br/>
+                                <img src="assets/food-recipe/contents/4.png" alt=""/><br/><br/>
+                            </li>
+                            <li>Enter the text contents about Recipe <br/><br/>
+                                <img src="assets/food-recipe/contents/5.png" alt=""/><br/><br/>
+                            </li>
+
+                            <li>Select or Add the Recipe Types<br/><br/>
+                                <img src="assets/food-recipe/contents/6.png" alt=""/><br/><br/>
+                            </li>
+
+                            <li>Select or Add the Cuisines Types<br/><br/>
+                                <img src="assets/food-recipe/contents/7.png" alt=""/><br/><br/>
+                            </li>
+
+                            <li>Select or Add the Courses Types<br/><br/>
+                                <img src="assets/food-recipe/contents/8.png" alt=""/><br/><br/>
+                            </li>
+
+                            <li>Select or Add the Ingredients Types<br/><br/>
+                                <img src="assets/food-recipe/contents/9.png" alt=""/><br/><br/>
+                            </li>
+                            <li>Select or Add the Skill level<br/><br/>
+                                <img src="assets/food-recipe/contents/10.png" alt=""/><br/><br/>
+                            </li>
+                            <li>Provide the recipe related information in <strong>Recpie Information</strong> meta box<br><br>
+                                <img src="assets/food-recipe/contents/11.png" alt=""/><br/><br/>
+                            </li>
+                            <li>Publish the recipe post once it is ready.</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="hentry" id="recipe-listing">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Add Recipes Listing Page</h1>
+                        Go to <strong>WordPress Admin &gt; Pages &gt; Add New</strong>
+                        <ol>
+                            <li>Provide the page title <br/><br/>
+                                <img src="assets/food-recipe/pages/7.png" alt=""/><br/><br/>
+                            </li>
+                            <li>Select the appropriate page template for Recipes Listing. <br/><br/>
+                                <img src="assets/food-recipe/pages/8.png" alt=""/><br/><br/>
+                            </li>
+                            <li><strong>Publish</strong> the page once it is ready.</li>
+                            <li>
+                                After publishing you need to add the newly created page in menu from <strong>WordPress Admin &gt; Appearance &gt; Menus </strong>
+                            </li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="hentry" id="create-search-results">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Recipe Advance Search Page</h1>
+                        <p class="bg-info text-info">
+                            In case of imported XML the Recipe Search Results page is already created and you do not need to follow this section.
+                        </p>
+                        <p>To set up the Recipe Search Results page you need to create a new page,<br/><br/>
+                            Go to <strong>Pages > Add New</strong>. You can give this page a title &quot;Recipe Search Results&quot; yet you do not need to include any contents for now.
+                            <br/><br/> Select the “Advance Search Result” template from the Page Attributes section, as displayed in screenshot given below and click <strong>“Publish”</strong>.</p>
+                        <img src="assets/food-recipe/pages/26.png" alt=""/><br/><br/>
+                        <h1 class="entry-title">Recipe Advance Search Configuration</h1>
+                        <p class="bg-warning text-warning">This Search feature will only work with <strong>pretty permalinks (Post name).</strong> So, please change your permalinks setting before moving on this section.</p>
+                        <p>To configure Recipe Advance Search from theme options you have to click <strong>Appearance &gt; Theme Options</strong>. Here you can see first tab Named <strong>Home Page</strong> on the left column and its options on right side.</p>
+                        <p>If you want to use Recipe advance search then select "show" form dropdown and then select Pages Checkbox for Advance Search on which you want to show advance search module.</p>
+                        <p>Copy the URL of Property Search Page and use it. As displayed in screen shot below.</p>
+                        <br/><br/>
+                        <img src="assets/food-recipe/home-page/13.png" alt=""/><br/><br/>
+                        <br/><br/>
+                        <img src="assets/food-recipe/home-page/12.png" alt=""/><br/><br/>
+                    </div>
+                </article>
+
+                <article class="hentry" id="recipe-submit-page">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Add Submit Recipe Page</h1>
+                        Go to <strong>WordPress Admin &gt; Pages &gt; Add New</strong>
+                        <ol>
+                            <li>Provide the page title <br><br>
+                                <img src="assets/food-recipe/pages/19.png" alt=""><br><br>
+                            </li>
+                            <li>Enter some contents if you want. <br><br>
+                                <img src="assets/food-recipe/pages/21.png" alt=""><br><br>
+                            </li>
+                            <li>Select the appropriate page template for Contact US. <br><br>
+                                <img src="assets/food-recipe/pages/20.png" alt=""><br><br>
+                            </li>
+                            <li><strong>Publish</strong> the page once it is ready.</li>
+                            <li>
+                                After publishing you need to add the newly created page in menu from <strong>WordPress Admin &gt; Appearance &gt; Menus </strong>
+                            </li>
+                            <li>
+                                <p>Also make sure that you have allowed Membership from General Settings. So, that anyone can register and submit a recipe.<br></p>
+                                <img src="assets/food-recipe/pages/10.png" alt=""/><br/><br/>
+                            </li>
+                            <li>
+                                <p>Provide an email address in theme optoins. You will get notification about each submitted recipe on the given email address. <br></p>
+                                <img src="assets/food-recipe/pages/22.png" alt=""/><br/><br/>
+                            </li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="hentry" id="faqs-page">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Add FAQs Page</h1>
+                        Go to <strong>WordPress Admin &gt; Pages &gt; Add New</strong>
+                        <ol>
+                            <li>Provide the page title <br/><br/>
+                                <img src="assets/food-recipe/pages/11.png" alt=""/><br/><br/>
+                            </li>
+                            <li>Select the appropriate page template for FAQs page. <br/><br/>
+                                <img src="assets/food-recipe/pages/12.png" alt=""/><br/><br/>
+                            </li>
+                            <li>Enter some text contents if you want. <br/><br/>
+                                <img src="assets/food-recipe/pages/13.png" alt=""/><br/><br/>
+                            </li>
+                            <li><strong>Publish</strong> the page once it is ready.</li>
+                            <li>
+                                After publishing you need to add the newly created page in menu from <strong>WordPress Admin &gt; Appearance &gt; Menus </strong>
+                            </li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="hentry" id="user-list">
+                    <div class="entry-content">
+                        <h1 class="entry-title">User Listing Page</h1>
+                        Go to <strong>WordPress Admin &gt; Pages &gt; Add New</strong>
+                        <ol>
+                            <li>Provide the page title <br/><br/>
+                                <img src="assets/food-recipe/pages/14.png" alt=""/><br/><br/>
+                            </li>
+                            <li>Select the appropriate page template for User listing page. <br/><br/>
+                                <img src="assets/food-recipe/pages/15.png" alt=""/><br/><br/>
+                            </li>
+                            <li>Enter some text contents if you want. <br/><br/>
+                                <img src="assets/food-recipe/pages/16.png" alt=""/><br/><br/>
+                            </li>
+                            <li><strong>Publish</strong> the page once it is ready.</li>
+                            <li>
+                                After publishing you need to add the newly created page in menu from <strong>WordPress Admin &gt; Appearance &gt; Menus </strong>
+                            </li>
+                            <li>Here are some options to control the User Listing <br/><br/>
+                                <img src="assets/food-recipe/pages/17.png" alt=""/><br/><br/>
+                            </li>
+                            <li>Here you can find the ID of User.<br/><br/>
+                                <img src="assets/food-recipe/pages/18.png" alt=""/><br/><br/>
+                            </li>
+                            <li>Here is complete user's profile page. <br/><br/>
+                                <img src="assets/food-recipe/pages/23.png" alt=""/><br/><br/>
+                            </li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="hentry" id="user-profile">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Add User Profile Page</h1>
+                        <p>This page allow the user to modify it's profile information from front end.</p>
+                        Go to <strong>WordPress Admin &gt; Pages &gt; Add New</strong>
+                        <ol>
+                            <li>Provide the page title <br/><br/>
+                                <img src="assets/food-recipe/pages/28.png" alt=""/><br/><br/>
+                            </li>
+                            <li>Select the appropriate page template for Recipes Listing. <br/><br/>
+                                <img src="assets/food-recipe/pages/27.png" alt=""/><br/><br/>
+                            </li>
+                            <li><strong>Publish</strong> the page once it is ready.</li>
+                            <li>
+                                After publishing you need to add the newly created page in menu from <strong>WordPress Admin &gt; Appearance &gt; Menus </strong>
+                            </li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="hentry" id="contact-page">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Add Contact Page</h1>
+                        Go to <strong>WordPress Admin &gt; Pages &gt; Add New</strong>
+                        <ol>
+                            <li>Provide the page title <br><br>
+                                <img src="assets/food-recipe/pages/3.png" alt=""><br><br>
+                            </li>
+                            <li>Select the appropriate page template for Contact US. <br><br>
+                                <img src="assets/food-recipe/pages/4.png" alt=""><br><br>
+                            </li>
+                            <li><strong>Publish</strong> the page once it is ready.</li>
+                            <li>
+                                After publishing you need to add the newly created page in menu from <strong>WordPress Admin &gt; Appearance &gt; Menus </strong>
+                            </li>
+                            <li>
+                                <h3>Configure Contact Options</h3>
+                                <p>Food Recipe Theme has a contact page template and few options in theme options panel to help you setup a contact page like the one you can see <a href="http://foodrecipes.inspirythemes.com/contact-us/" target="_blank">here</a>.</p>
+                                <p>You can find your locations Latitude and Longitude from <a href="http://itouchmap.com/latlong.html" target="_blank">here</a>. </p>
+                                <img src="assets/food-recipe/pages/5.png" alt=""><br><br>
+                            </li>
+                            <li>
+                                <h3>Configure Contact Sidebar Widget</h3>
+                                <p>you can add simple text widgets in contact page sidebar to display your office address information as displayed in image below.</p>
+                                <img src="assets/food-recipe/pages/6.png" alt=""><br><br>
+                            </li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="hentry" id="tabs-widget">
+                    <div class="entry-content">
+                        <h1 class="entry-title">How to set up Custom jQuery Tabs Widget</h1>
+                        <p>This widget is for <strong>home page widgetized area and sidebars</strong>. You can make three tabs in it and select different types of listings for your recipes.</p>
+                        <img src="assets/food-recipe/widgets/1.png" alt=""/><br/><br/>
+                    </div>
+                </article>
+
+                <article class="hentry" id="ads-widget">
+                    <div class="entry-content">
+                        <h1 class="entry-title">How to set up Custom Ads Widgets</h1>
+                        <p>There are two Custom Ad Widgets in this theme. One is for homepage and other one is for sidebar. Both can easily be identified by their names in widgets section. These widgets have specified the size of image and have link fields for image path URL and Target URL where you want user to go.</p>
+                    </div>
+                </article>
+
+                <article class="hentry" id="archive-widget">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Custom Archive Widget</h1>
+                        <p>This widget is to display archive links in your sidebar or footer columns area. You can display archives Daily, Weekly, Monthly or yearly bases.</p>
+                        <img src="assets/food-recipe/widgets/2.png" alt=""/><br/><br/>
+                    </div>
+                </article>
+
+                <article class="hentry" id="recipe-types-widget">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Recipe Types Widget</h1>
+                        <p>Recipe Types widget is to list all recipe types with links to their related archive pages.</p>
+                        <img src="assets/food-recipe/widgets/3.png" alt=""/><br/><br/>
+                    </div>
+                </article>
+
+                <article class="hentry" id="news-events-widget">
+                    <div class="entry-content">
+                        <h1 class="entry-title">News And Events Widget</h1>
+                        <p>News and Events Widget have latest posts from your blog. You can use this widget in sidebar, footer columns and also in homepage bottom area.</p>
+                        <img src="assets/food-recipe/widgets/4.png" alt=""/><br/><br/>
+                    </div>
+                </article>
+
+                <article class="hentry" id="weekly-special-widget">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Weekly Special Recipe Widget</h1>
+                        <p>Weekly Special Recipe Widget have one special recipe to show. You can use this widget in sidebar, footer columns and homepage bottom area. To select that specific recipe you have to click on "Weekly Special Recipe" Dropdown and then select weekly special recipe from the given list.</p>
+                        <img src="assets/food-recipe/widgets/5.png" alt=""/><br/><br/>
+                    </div>
+                </article>
+
+                <article class="hentry" id="custom-twitter-widget">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Twitter Widget</h1>
+                        <p><strong>Note: </strong>Custom Twitter Widget has been removed from this version.</p>
+                        <p>To display tweets you have to install <a href="https://wordpress.org/plugins/display-tweets-php/">'Display Tweets'</a> Plugin. You can specify twitter ID and number of tweets to show from settings page of this plugin. You need four other fields to make your twitter widget work with twitter API. Fields are consumer Key, consumer Secret, Access Token, Access Token Secret.</p>
+                        <img src="assets/food-recipe/widgets/6.png" alt=""/><br/><br/>
+                        <h5>How to Get Your Twitter Consumer Keys and Access Tokens</h5>
+                        <ol>
+                            <li>Sign In to the <a href="https://dev.twitter.com/">Twitter Developers section</a>. If you do not already have an account, you can login with your normal Twitter credentials</li>
+                            <li>Got to My Applications page.</li>
+                            <li>Click Create a New ApplicationButton and it will take you to Create an Application form page.</li>
+                            <li>Provide your website name, description and URL, Agree with contract and provide CAPTCHA and press Create your Twitter Application button.</li>
+                            <li>Details of your new twitter application will be shown along with your consumer key and consumer secret.</li>
+                            <li>But, you also need to create access tokens and for that you need to click on Create my access token button.</li>
+                            <li>The page will then refresh on the "Details" tab with your new access tokens. (if you are not able to view these first time, click on details tab and access tokens should appear after page refresh) You can recreate these at any time if you need to.</li>
+                            <li>Now use these consumer key, consumer secret, access token and access token secret in twitter widget back end. As, displayed in left screenshot.</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="hentry" id="recent-recipes-widget">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Recent Recipes Widget</h1>
+                        <p>Recent Recipes Widget shows latest recipes from your recipe post type. You can select number of items to show from this widget options.</p>
+                        <img src="assets/food-recipe/widgets/7.png" alt=""/><br/><br/>
+                    </div>
+                </article>
+
+                <article class="hentry" id="slider-widget">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Recipe Slider Widget</h1>
+                        <p>There are two slider widgets for sidebar. You can choose between them to slide your recipes by recipe type or by cuisine.</p>
+                        <img src="assets/food-recipe/widgets/8.png" alt=""/><br/><br/>
+                    </div>
+                </article>
+
+                <article class="hentry" id="footer-info-widget">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Footer Info Widget</h1>
+                        <p>Footer info widget is to put site logo in footer and company information under it. There is a readmore button like where you can guide user to your full company information page or wherever you want.</p>
+                        <img src="assets/food-recipe/widgets/9.png" alt=""/><br/><br/>
+                    </div>
+                </article>
+
+                <article class="hentry" id="columns">
+                    <h1>Columns</h1>
+                    <p>Columns shortcode is easy way to make columns in your page or post. All short codes related to columns and usage of these codes is mentioned below:</p>
+                       <pre class="prettyprint">
+                          [columns] <===== You should wrap all columns in it.
+                            [two_column][/two_column]
+                            [one_third][/one_third]
+                            [two_third][/two_third]
+                            [one_fourth][/one_fourth]
+                            [three_fourth][/three_fourth]
+                          [/columns]
+                        </pre>
+                    <h3>Usage</h3>
+                    <img src="assets/food-recipe/shortcodes/1.png" alt=""/>
+                    <h3>Output Example </h3>
+                    <img src="assets/food-recipe/shortcodes/1-1.png" alt=""/>
+                </article>
+
+                <article class="hentry" id="jQuery-accordion">
+                    <h1>jQuery Accordion</h1>
+                        <pre class="prettyprint">
+                            [accordion]
+
+                                [accor_block active=true title="First Accordion Item"]Some Contents[/accor_block]
+                                [accor_block title="Second Accordion Item"]Some Contents[/accor_block]
+                                [accor_block title="Third Accordion Item"]Some Contents[/accor_block]
+
+                            [/accordion]
+                        </pre>
+                    <h3>Usage</h3>
+                    <img src="assets/food-recipe/shortcodes/2.png" alt=""/>
+                    <h3>Output Example </h3>
+                    <img src="assets/food-recipe/shortcodes/2-2.png" alt=""/>
+                </article>
+
+                <article class="hentry" id="jQuery-toggle">
+                    <h1>jQuery Toggle</h1>
+                        <pre class="prettyprint">
+                            [toggle]
+
+                                [toggle_block title="Your Toggle Title"]Toggle Contents[/toggle_block]
+
+                            [/toggle]
+                        </pre>
+                    <h3>Usage</h3>
+                    <img src="assets/food-recipe/shortcodes/3.png" alt=""/>
+                    <h3>Output Example </h3>
+                    <img src="assets/food-recipe/shortcodes/3-3.png" alt=""/>
+                </article>
+
+                <article class="hentry" id="jQuery-tabs">
+                    <h1>jQuery Tabs</h1>
+                        <pre class="prettyprint">
+                            [tabs titles="First Tab, Second Tab, Third Tab"]
+
+                                [tab_block] First Tab Contents [/tab_block]
+                                [tab_block] Second Tab Contents [/tab_block]
+                                [tab_block] Third Tab Contents [/tab_block]
+
+                            [/tabs]
+                        </pre>
+                    <h3>Usage</h3>
+                    <img src="assets/food-recipe/shortcodes/4-4.png" alt=""/>
+                    <h3>Output Example </h3>
+                    <img src="assets/food-recipe/shortcodes/4.png" alt=""/>
+                </article>
+
+                <article class="hentry" id="buttons">
+                    <h1>Buttons</h1>
+                        <pre class="prettyprint">
+                          [button link="http://www.google.com" target="_blank"]This is simple button[/button]
+                        </pre>
+                    <h3>Usage</h3>
+                    <img src="assets/food-recipe/shortcodes/5.png" alt=""/>
+                    <h3>Output Example </h3>
+                    <img src="assets/food-recipe/shortcodes/5-5.png" alt=""/>
+                </article>
+
+                <article class="hentry" id="list-types">
+                    <h1>List Types</h1>
+                        <pre class="prettyprint">
+                            [list type="checked"]
+                                your list item
+                                your list item
+                                your list item
+                                your list item
+                            [/list]
+                        </pre>
+                    <p>Available types are: <strong>"checked", "arrow", "arrow2", "arrow3"</strong></p>
+                    <h3>Usage</h3>
+                    <img src="assets/food-recipe/shortcodes/6.png" alt=""/>
+                    <h3>Output Example </h3>
+                    <img src="assets/food-recipe/shortcodes/6-6.png" alt=""/>
+                </article>
+
+                <article class="hentry" id="info-messages">
+                    <h1>Message Boxes</h1>
+                        <pre class="prettyprint">
+                            [note]Your Note Message Her[/note]
+                            [note type="error"]Your Note Message Her[/note]
+                            [note type="hint"]Your Note Message Her[/note]
+                            [note type="alert"]Your Note Message Her[/note]
+                            [note type="note"]Your Note Message Here[/note]
+                        </pre>
+                    <h3>Usage</h3>
+                    <img src="assets/food-recipe/shortcodes/7.png" alt=""/>
+                    <h3>Output Example </h3>
+                    <img src="assets/food-recipe/shortcodes/7-7.png" alt=""/>
+                </article>
+
+                <article class="hentry" id="special-headings">
+                    <h1>Special Headings</h1>
+                        <pre class="prettyprint">
+                            [red_heading]Red Heading[/red_heading]
+                            [blue_heading]Blue Heading[/blue_heading]
+                            [red_heading border="true"]Red Heading[/red_heading]
+                            [blue_heading border="true"]Blue Heading with Border[/blue_heading]
+                        </pre>
+                    <h3>Usage</h3>
+                    <img src="assets/food-recipe/shortcodes/8.png" alt=""/>
+                    <h3>Output Example </h3>
+                    <img src="assets/food-recipe/shortcodes/8-8.png" alt=""/>
+                </article>
+
+                <article class="hentry" id="blockquote">
+                    <h1>Blockquote</h1>
+                        <pre class="prettyprint">
+                           [blockquote width="290" align="left"]Your quote here[/blockquote]
+                        </pre>
+                    <h3>Usage</h3>
+                    <img src="assets/food-recipe/shortcodes/9.png" alt=""/>
+                    <h3>Output Example </h3>
+                    <img src="assets/food-recipe/shortcodes/9-9.png" alt=""/>
+                </article>
+
+                <article class="hentry" id="custom-menus">
+                    <h1>Custom Menus</h1>
+                        <pre class="prettyprint">
+                           [menu]
+                                your menu list item
+                                your menu list item
+                                your menu list item
+                                your menu list item
+                                your menu list item
+                            [/menu]
+                        </pre>
+                    <h3>Usage</h3>
+                    <img src="assets/food-recipe/shortcodes/10.png" alt=""/>
+                    <h3>Output Example </h3>
+                    <img src="assets/food-recipe/shortcodes/10-10.png" alt=""/>
+                </article>
+
+                <article class="hentry" id="step-headings-horizontal-line">
+                    <h1>Step Headings</h1>
+                        <pre class="prettyprint">
+                        [step_head]Step 01[/step_head]
+                        [step_head]Step 02[/step_head]
+                        </pre>
+                    <h3>Usage</h3>
+                    <img src="assets/food-recipe/shortcodes/11.png" alt=""/>
+                    <h1>Horizontal Line</h1>
+                        <pre class="prettyprint">
+                        [hline_fat]
+                        </pre>
+                    <h3>Usage</h3>
+                    <img src="assets/food-recipe/shortcodes/12.png" alt=""/>
+                </article>
+
+
+                <article class="hentry" id="faq-list">
+                    <h1>FAQ List </h1>
+                        <pre class="prettyprint">
+                                [faq_wrapper]
+
+                                    [faq_item title="Maple and a layer of nuts in this buttery dessert makes Christmas oh so special!"]
+                                            Put Your Answer Here.!
+                                    [/faq_item]
+
+                                    [faq_item title="Maple and a layer of nuts in this buttery dessert makes Christmas oh so special!"]
+                                            Put Your Answer Here.!
+                                    [/faq_item]
+
+                                [/faq_wrapper]
+                        </pre>
+                    <h3>Usage</h3>
+                    <img src="assets/food-recipe/shortcodes/13.png" alt=""/>
+                    <h3>Output Example </h3>
+                    <img src="assets/food-recipe/shortcodes/13-13.png" alt=""/>
+                </article>
+
+                <article class="hentry" id="ingredients">
+                    <h1>Ingredients</h1>
+                        <pre class="prettyprint">
+                          			[ingredients]
+	                                [ingredients title="My Heading"]
+                        </pre>
+                    <h3>Usage</h3>
+                    <img src="assets/food-recipe/shortcodes/14.png" alt=""/>
+                    <h3>Output Example </h3>
+                    <img src="assets/food-recipe/shortcodes/14-14.png" alt=""/>
+                </article>
+
+                <article class="hentry" id="method">
+                    <h1>Method </h1>
+                        <pre class="prettyprint">
+                                [method]
+
+                                [method title="My Heading"]
+                        </pre>
+                    <h3>Usage</h3>
+                    <img src="assets/food-recipe/shortcodes/15.png" alt=""/>
+                    <h3>Output Example </h3>
+                    <img src="assets/food-recipe/shortcodes/15-15.png" alt=""/>
+                </article>
+
+                <article class="hentry" id="shortcodes">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Shortcodes</h1>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h4>1st List Style</h4>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <strong>Shortcode Example</strong>
+                                    <br/><br/>
+                                    <img src="assets/food-recipe/shortcodes/1.png" alt=""/>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <strong>Output Example</strong>
+                                    <br/><br/>
+                                    <img src="assets/food-recipe/shortcodes/1-1.png" alt=""/>
+                                </div>
+                            </div>
+                            <br/>
+                            <br/>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h4>2nd List Style</h4>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <strong>Shortcode Example</strong>
+                                    <br/><br/>
+                                    <img src="assets/food-recipe/shortcodes/2.png" alt=""/>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <strong>Output Example</strong>
+                                    <br/><br/>
+                                    <img src="assets/food-recipe/shortcodes/2-2.png" alt=""/>
+                                </div>
+                            </div>
+                            <br/>
+                            <br/>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h4>3rd List Style</h4>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <strong>Shortcode Example</strong>
+                                    <br/><br/>
+                                    <img src="assets/food-recipe/shortcodes/3.png" alt=""/>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <strong>Output Example</strong>
+                                    <br/><br/>
+                                    <img src="assets/food-recipe/shortcodes/3-3.png" alt=""/>
+                                </div>
+                            </div>
+                            <br/>
+                            <hr/>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h4>Buttons</h4>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <strong>Shortcode Example</strong>
+                                    <br/><br/>
+                                    <img src="assets/food-recipe/shortcodes/4.png" alt=""/>
+                                </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <strong>Output Example</strong>
+                                    <br/><br/>
+                                    <img src="assets/food-recipe/shortcodes/4-4.png" alt=""/>
+                                </div>
+                            </div>
+                            <br/>
+                            <hr/>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h4>Messages</h4>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <strong>Shortcode Example</strong>
+                                    <br/><br/>
+                                    <img src="assets/food-recipe/shortcodes/5.png" alt=""/>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <strong>Output Example</strong>
+                                    <br/><br/>
+                                    <img src="assets/food-recipe/shortcodes/5-5.png" alt=""/>
+                                </div>
+                            </div>
+                            <br/>
+                            <hr/>
+                            <br/>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h4>Tabs</h4>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <strong>Shortcode Example</strong>
+                                    <br/><br/>
+                                    <img src="assets/food-recipe/shortcodes/6.png" alt=""/>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <strong>Output Example</strong>
+                                    <br/><br/>
+                                    <img src="assets/food-recipe/shortcodes/6-6.png" alt=""/>
+                                </div>
+                            </div>
+                            <br/>
+                            <hr/>
+                            <br/>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h4>Accordions</h4>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <strong>Shortcode Example</strong>
+                                    <br/><br/>
+                                    <img src="assets/food-recipe/shortcodes/7.png" alt=""/>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <strong>Output Example</strong>
+                                    <br/><br/>
+                                    <img src="assets/food-recipe/shortcodes/7-7.png" alt=""/>
+                                </div>
+                            </div>
+                            <br/>
+                            <hr/>
+                            <br/>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h4>Toggles</h4>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <strong>Shortcode Example</strong>
+                                    <br/><br/>
+                                    <img src="assets/food-recipe/shortcodes/8.png" alt=""/>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <strong>Output Example</strong>
+                                    <br/><br/>
+                                    <img src="assets/food-recipe/shortcodes/8-8.png" alt=""/>
+                                </div>
+                            </div>
+                            <br/>
+                            <hr/>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="hentry" id="modify-styles">
+                    <div class="entry-content">
+                        <h1 class="entry-title">How to Modify Styles</h1>
+                        There are various options available to modify styles in this theme.
+                        <ol>
+                            <li><strong>Google Fonts</strong> - Go to 'Theme Options &gt; Styling' for different Google Fonts.
+                                <ol>
+                                    <li>
+                                        Chooe the font from select box. AS shown below
+                                        <br/>
+                                        <br/>
+                                        <img src="assets/food-recipe/modify-theme/8.png" alt=""/>
+                                        <br/>
+                                        <br/>
+                                    </li>
+                                    <li>
+                                        You can add multiple fonts by clicking on 'Add Google Font', as show below
+                                        <br/>
+                                        <br/>
+                                        <img src="assets/food-recipe/modify-theme/9.png" alt=""/>
+                                        <br/>
+                                        <br/>
+                                    </li>
+                                </ol>
+                            </li>
+                            <p class="bg-warning text-warning">Now save the options. Please note that if you didn't save the option then you can't get the font for body and hedaing styles.So, you have to save them before moving on.</p>
+
+                            <li>
+                                Now you can select fonts, colors, font-size, font-weight etc.. for your body and heading styles. Here is a complete procedure.
+                                <br/>
+                                <br/>
+                                <img src="assets/food-recipe/modify-theme/10.gif" alt=""/>
+                                <br/>
+                                <br/>
+                            </li>
+                            <li><strong>Quick CSS</strong> - Go to 'Theme Options &gt; Styling &gt; Quick CSS' to write some short css.</li>
+                            <li><strong>Custom CSS in Child Theme</strong> - 'style.css' file is provided in child theme to add major css changes.
+                                <br/>
+                                <br/>
+                                <img src="assets/food-recipe/modify-theme/1.png" alt=""/>
+                            </li>
+                            <li><strong>Custom CSS in Parent Theme</strong> - if you are not using child theme then 'css/style.css' file is provided in parent theme to add major css changes.
+                                <br/>
+                                <br/>
+                                <img src="assets/food-recipe/modify-theme/2.png" alt=""/>
+                            </li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="hentry" id="modify-theme-options">
+                    <div class="entry-content">
+                        <h1 class="entry-title">How to Modify Theme Options</h1>
+                        This theme uses <a target="_blank" href="https://wordpress.org/plugins/option-tree/">Option Tree</a> for theme options and related file reside in theme-options.php'
+                        <br/><br/>
+                        <img src="assets/food-recipe/modify-theme/3.png" alt=""/>
+                        <br/><br/>
+                        So, you can easily modify the code of existing Theme Options. Or you can add new Theme Options using option_tree_settings_args filter in child theme.
+                        <br/><br/>
+                        <img src="assets/food-recipe/modify-theme/4.png" alt=""/>
+                    </div>
+                </article>
+
+                <article class="hentry" id="modify-meta-boxes">
+                    <div class="entry-content">
+                        <h1 class="entry-title">How to Modify Meta Boxes</h1>
+                        This theme uses <a target="_blank" href="http://wordpress.org/plugins/meta-box/">Meta Box Plugin</a> for meta boxes and related file reside in 'meta-box &gt; config-meta-boxes.php'
+                        <br/><br/>
+                        <img src="assets/food-recipe/modify-theme/6.png" alt=""/>
+                        <br/><br/>
+                        So, you can easily modify the code of existing meta boxes. Or you can add new meta boxes using <strong>framework_theme_meta</strong> filter in child theme.
+                        <br/><br/>
+                        <img src="assets/food-recipe/modify-theme/7.png" alt=""/>
+                        <br/><br/>
+                    </div>
+                </article>
+
+                <article class="hentry" id="hire-customization">
+                    <div class="entry-content">
+                        <h1 class="entry-title">Hire Customization Services</h1>
+                        <p>
+                            If you need some additional features or want modification in existing theme features then you can contact theme customization service providers like
+                            <a target="_blank" href="http://psdtohtmlwp.com/">http://psdtohtmlwp.com/</a> or
+                            <a target="_blank" href="https://codeable.io/">https://codeable.io/</a> or
+                            <a target="_blank" href="http://werkpress.com/">http://werkpress.com/</a>
+                        </p>
+                    </div>
+                </article>
+
+            </main>
+        </div>
+    </div>
+</div><!-- site container end -->
+<script type="text/javascript" src="assets/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.js"></script>
+<script type="text/javascript" src="assets/js/lightbox.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/custom.js"></script>
+</body>
+</html>
+
