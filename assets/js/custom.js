@@ -28,8 +28,7 @@ $(document).ready(function(){
         target.addClass('active');
         target.closest('.sub-menu').slideDown();
         target.parents('li').addClass('active');
-        target.fadeIn().siblings('.hentry').hide();
-        console.log( '.' +urlID.attr('id') );
+        urlID.fadeIn().siblings('.hentry').hide();
     } else {
         $('.page-content .hentry').first().show();
     }
